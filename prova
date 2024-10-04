@@ -1,0 +1,23 @@
+usuario_correto = 'Infinity School'
+senha_correta = 2024
+tentativas_maximas = 3
+tentativas = 1
+
+
+while tentativas <= tentativas_maximas:
+    usuario = str(input('Digite seu usuário:')).strip()
+    senha = int(input('Digite sua senha:'))   
+    
+    if usuario == usuario_correto and senha == senha_correta:
+        print('Acesso permitido!')
+        break
+    
+    else:
+        tentativas +=1
+        print('Acesso negado!')
+
+if tentativas == tentativas_maximas:
+    print(f'Tentativas maximas atingidas {tentativas_maximas}')
+    print('Seu acesso foi bloqueado.')
+
+print('Finalizar programa')
